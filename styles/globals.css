@@ -1,9 +1,14 @@
-html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-image: url("../public/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
 }
 
 a {
@@ -13,4 +18,291 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.container {
+  margin: 5rem 10rem;
+  padding: 2rem 2rem;
+  height: 600px;
+  border-radius: 2rem;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 2px 3px 1px rgba(128, 128, 128, 0.37);
+}
+
+.text-menu {
+  margin-left: 20px;
+  color: #000 !important;
+  cursor: pointer;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-menu-active {
+  margin-left: 20px;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff !important;
+  border-radius: 10px;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-slide {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 30px 1px rgba(128, 128, 128, 0.37);
+  width: 80% !important;
+  height: 280px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  cursor: pointer;
+}
+
+.card-slide-health {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 30px 1px rgba(128, 128, 128, 0.37);
+  width: 280px !important;
+  height: 350px;
+  margin-left: 30px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.title-health {
+  padding-top: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: start;
+}
+
+.text-health {
+  font-weight: 300 !important;
+  font-size: 14px !important;
+}
+
+.row-description-health {
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 83px !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: start;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.img-health {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #000 !important;
+  margin-top: -300px !important;
+}
+
+.slick-prev,
+.slick-next {
+  padding-top: 100px !important;
+}
+
+.box-slide {
+  position: relative !important;
+  z-index: 0;
+}
+
+.box-slide > span {
+  overflow: initial !important;
+}
+
+.row-title-foods {
+  position: absolute;
+  top: 100px;
+  left: 26%;
+  transform: translate(25%);
+  z-index: 99;
+}
+
+.title-foods {
+  margin-right: 50px;
+}
+
+.img-foods {
+  position: absolute !important;
+  top: 180px !important;
+  left: 50%;
+  transform: translate(63%);
+}
+
+.divider {
+  margin: 10px !important;
+}
+
+.title {
+  margin-top: 50px;
+}
+
+.text-foods {
+  padding-top: 100px;
+}
+
+.text-description-foods {
+  color: darkgray !important;
+}
+
+.text-calories {
+  padding-top: 20px;
+}
+
+.form-calculator {
+  margin-top: 50px;
+}
+
+.ant-input {
+  border-radius: 10px !important;
+  height: 40px !important;
+}
+
+.ant-input:focus,
+.ant-input-focused {
+  box-shadow: #000 !important;
+}
+
+.btn-cal {
+  background-color: #000 !important;
+  color: #fff !important;
+  border: 1px solid #000 !important;
+  border-radius: 10px !important;
+  width: 100% !important;
+  height: 40px !important;
+}
+
+.btn-cal:hover {
+  background-color: #000 !important;
+  color: #fff !important;
+  border: 1px solid #000 !important;
+}
+
+.card-bmi {
+  border-radius: 10px !important;
+}
+
+.active-bmi {
+  background-color: #ede2ff !important;
+  color: purple !important;
+  border-radius: 10px !important;
+  padding: 0.5rem !important;
+  margin-bottom: 10px !important;
+}
+
+.row-bmi {
+  margin-bottom: 10px !important;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.col-health {
+  margin-top: 40px;
+  height: 430px;
+  width: 800px;
+  overflow: scroll;
+  text-align: center;
+}
+
+.img-health-id {
+  border-radius: 10px;
+}
+
+.title-health-id {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.text-health-id {
+  font-weight: 300 !important;
+  text-align: start;
+}
+
+.card-bmr {
+  border-radius: 10px !important;
+  height: 60px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px !important;
+  cursor: pointer;
+}
+
+.card-bmr-active {
+  border-radius: 10px !important;
+  height: 60px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px !important;
+  cursor: pointer;
+  background-color: #000 !important;
+  border: 1px solid #000 !important;
+  color: #fff !important;
+}
+
+.card-bmr:hover {
+  border-radius: 10px !important;
+  height: 60px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px !important;
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+.title-bmi {
+  margin-top: 40px;
+  margin-right: 40px;
+  cursor: pointer;
+  width: 80px;
+  text-align: center;
+}
+
+.title-bmi-active {
+  margin-top: 40px;
+  margin-right: 40px;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff !important;
+  width: 80px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.title-bmi:hover {
+  margin-top: 40px;
+  margin-right: 40px;
+  cursor: pointer;
+  color: dimgray;
 }
